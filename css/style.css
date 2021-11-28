@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.hidden{
+    display: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    font-family: 'Karla', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main{
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom{
+    height: 10%;
+    padding-bottom: 30px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#login-form input{
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid white;
+}
+
+#login-form input:focus{
+    outline: none;
+}
+
+#login-form input::placeholder{
+    font-size: 50px;
+}
+#login-form input::-webkit-input-placeholder{
+    font-size: 50px;
+}
+#login-form input::-ms-input-placeholder{
+    font-size: 50px;
+}
+
+#greeting{
+    font-size: 45px;
+}
+
+#weather{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#quote{
+    font-size: 15px;
+}

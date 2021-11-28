@@ -1,0 +1,121 @@
+#date-container{
+    height: 50px;
+    font-size: 25px;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock1{
+    margin: 0;
+    height: 300px;
+    font-size: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock2{
+    width: 300px;
+    height: 300px;
+    background: black;
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+#center{
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+
+    position: absolute;
+}
+
+#hour-hand{
+    width: 3px;
+    height: 100px;
+    background: red;
+
+    position: absolute;
+    top: 50px;
+
+    transform-origin: 1.5px bottom;
+}
+
+#minute-hand{
+    width: 2px;
+    height: 130px;
+    background: blue;
+
+    position: absolute;
+    top: 20px;
+
+    transform-origin: 1px bottom;
+}
+
+#second-hand{
+    width: 1px;
+    height: 150px;
+    background: white;
+
+    position: absolute;
+    top: 15px;
+
+    transform-origin: 0.5px 135px;
+}
+
+.stick{
+    width: 1px;
+    height: 135px;
+    transform-origin: 0.5px bottom;
+
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+
+    position: absolute;
+    top: 15px;
+}
+
+.number{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+
+    position: absolute;
+}
+
+#button-container{
+    margin-top: 50px;
+    width: 35px;
+    display: none;
+    justify-content: space-between; 
+}
+
+#button-container input{
+    appearance: none;
+    margin: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.4;
+    border: none;
+    outline: none;
+}
+
+#button-container input:checked{
+    background-color: white;
+    opacity: 1;
+}

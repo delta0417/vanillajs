@@ -1,0 +1,71 @@
+#todo-container{
+    padding: 30px;
+    position: absolute;
+    right: -345px; 
+    overflow: auto;
+
+    width: 300px;
+    height: 500px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.open{
+    animation: slide 1s forwards;
+}
+
+@keyframes slide{
+    from{
+        right: -345px;
+    }to{
+        right: 0;
+    }
+}
+
+#todo-form input{
+    padding: 0;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    color: rgb(60, 60, 60);
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+#todo-form input:focus{
+    outline: none;
+}
+
+#todo-form input::placeholder{
+    color: rgb(150, 150, 150);
+}
+#login-form input::-webkit-input-placeholder{
+    color: rgb(150, 150, 150);
+}
+#login-form input::-ms-input-placeholder{
+    color: rgb(150, 150, 150);
+}
+
+#todo-list{
+    padding-inline-start: 30px; 
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+
+#todo-list li{
+    margin-bottom: 10px;
+}
+
+#todo-list button{
+    margin-left: 10px;
+    color: rgb(100, 100, 100);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
